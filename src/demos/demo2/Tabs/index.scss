@@ -1,0 +1,20 @@
+.setting-tab {
+  height: 100%;
+  width: 136px;
+  display: flex;
+  flex-direction: column;
+  .tabs {
+    cursor: pointer;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    right: -1px;
+    &.tabs-active {
+      border-right: 1px solid #ffb900;
+      background: linear-gradient(-90deg, #e4bf7633 -8.46%, #e4bf7600 127.57%);
+    }
+  }
+}

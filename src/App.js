@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+// import Page from "./demos/demo1"; // 元素拖拽
+import Page from "./demos/demo1 copy"; // 元素拖拽 优化
+// import Page from "./demos/demo2"; // 滚动监听 和 tab 切换
+// import Page from "./demos/demo3"; // forwardRef 和 useImperativeHandle
+// import Page from "./demos/demo4"; // useTransition 和 useDeferredValue
+// import Page from "./demos/demo5"; // useSyncExternalStore 封装 localStorage 实现状态共享
+// import Page from "./demos/demo7"; // 列表定时轮询刷新+滚动加载
+
+if (process.env.NODE_ENV === "development") {
+  require("./mockjs");
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Page />
     </div>
   );
 }
